@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nail Polish Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="principal">
+    <div class="beneficios">
+    <h2>Nail Polish Place</h2>
+    <img src="nailpolishpic.png"
+height="225"
+width="225"
+>
+    <p>Com um portfólio completo de cores e estilos, a NPS dispõe de uma linha voltada para unhas lindas para uso profissional e doméstico. São esmaltes inovadores, desenvolvidos com tecnologia de ponta e que antecipam tendências.</p>
+
+
+
