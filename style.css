@@ -1,20 +1,36 @@
-body {
-
-
-}
-
-.principal{
-background-color: antiquewhite;
-}
-
-
-#banner{
-  width: 225px;
-  height: 225px;
+/* Adicione estas regras no arquivo style.css */
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #68ccc9
 
 }
- #verde {
-  width: 400px;
-  height: 663px;
 
- }
+
+/*#68ccc9/*
+
+.banner {
+  flex: 1 1 100%;
+  image-align: center
+}
+#verde
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  flex: 1 1 16%; /* Cada produto ocupará 25% da largura da linha */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#verde {
+  width: 50px;
+  height: 83px;
+
+}
+.produto img {
+  width: 50px; /* Garante que as imagens ocupem toda a largura do contêiner */
+  height: 83px; /* Mantém a proporção da imagem */
+}
