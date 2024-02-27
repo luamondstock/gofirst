@@ -6,57 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nail Polish Store</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Adicione estas regras diretamente no cabeçalho HTML */
+    .principal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .banner {
+      flex: 1 1 100%;
+    }
+
+    .produtos-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .produto {
+      flex: 1 1 25%; /* Cada produto ocupará 25% da largura da linha */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .produto img {
+      width: 100%; /* Garante que as imagens ocupem toda a largura do contêiner */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+  </style>
 </head>
 
 <body>
   <header>
-   <nav>
-    <div class container>
-     <h1 class="MS">Nail Polish Store</h1>
-
-    </div>
-   </nav>
+    <nav>
+      <div class="container">
+      
+      </div>
+    </nav>
   </header>
   <div class="principal">
     <div class="banner">
-    <h2>Nail Polish Place</h2>
-    <img class="banner" src="Sem título-1.png"
-height="225"
-width="225"
->
-    <p>Com um portfólio completo de cores e estilos, a NPS dispõe de uma linha voltada para unhas lindas para uso profissional e doméstico. São esmaltes inovadores, desenvolvidos com tecnologia de ponta e que antecipam tendências.</p>
+      <h1>Nail Polish Place</h1>
+      <img class="banner" src="Sem título-1.png" height="500" width="500"> 
+      <p>Com um portfólio completo de cores e estilos, a NPS dispõe de uma linha voltada para unhas lindas para uso profissional e doméstico. São esmaltes inovadores, desenvolvidos com tecnologia de ponta e que antecipam tendências.</p>
 
+      <h2>Esmaltes Risque:</h2>
+   <p>Revolução das cores</p>
 
-  <p>Esmaltes Risque:</p>
-  
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplo de borda em HTML</title>
-<style>
-    .borda {
-        border: 2px solid black; /* largura, estilo e cor da borda */
-        padding: 2px; /* apenas para espaçamento interno para melhor visualização */
-      width: 200px;
-    
-   }
-</style>
-</head>
-<body>
+      <div class="produtos-container">
+        <div class="verde">
+          <li>Esmalte verde</li>
+          <img id="verde" src="esmalteverdementa.png" height="50px" width="83"> 
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
 
-<div class="borda">
-  <li>Esmalte verde</li>
-  <img class="verde" src="esmalteverdementa.png">
+        <div class="produto">
+          <li>Esmalte laranja</li>
+          <img id="laranja" src="esmaltelaranja.png" height="50px" width="83">
+           
 
+          <p class="preço-produto">R$ 6,79</p>
+          
+        </div>
 
-  <p class="preço-produto">R$ 6,79</p>
-</div>
+        <div class="produto">
+          <li>Esmalte azul</li>
+          <img id="azul" src="esmalteazul.png" height="50px" width="83">
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
 
+        <div class="produto">
+          <li>Esmalte roxo</li>
+          <img id="roxo" src="esmalteroxabordo.png" height="50px" width="83">
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
+
+        <div class="nudenobege">
+          <li>Esmalte nude</li>
+          <img id="nudenobege" src="nudenobege.png" height="50px" width="83">
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
+
+        <div class="esmalteroxoj">
+          <li>Esmalte roxoo</li>
+          <img id="esmalteroxoj" src="esmalteroxoj.png" height="50px" width="83">
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
 
-  <li>Esmalte laranja</li>
-  <img class="laranja" src="esmaltelaranja.png">
-  <p class="preço-produto">R$ 6,79</p>
+</html>
