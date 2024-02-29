@@ -6,12 +6,9 @@
 
 }
 
-
-/*#68ccc9/*
-
 .banner {
   flex: 1 1 100%;
-  image-align: center
+  text-align: center;
 }
 #verde
 .produtos-container {
@@ -21,13 +18,25 @@
 
 .produto {
   flex: 1 1 16%; /* Cada produto ocupará 25% da largura da linha */
-  padding: 10px;
-  box-sizing: border-box;
 }
 
+
+
 #verde {
-  width: 50px;
-  height: 83px;
+  width: 100px;
+  height: 166px;
+
+}
+
+.carrinho {
+  width: 16px; /* Ajuste o tamanho do ícone do carrinho conforme necessário */
+  height: 16px; /* Mantém a proporção da altura */
+}
+
+
+#laranja {
+  width: 100px;
+  height: 166px;
 
 }
 .produto img {
