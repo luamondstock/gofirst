@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nail Polish Store</title>
+
+  <link rel="carrinho" href="carrinho.html">
+
   <link rel="stylesheet" href="style.css">
   <style>
     /* Adicione estas regras diretamente no cabeçalho HTML */
     .principal {
       display: flex;
       flex-wrap: wrap;
+      background-color: #68ccc9
     }
 
     .banner {
@@ -39,6 +43,10 @@
   <header>
     <nav>
       <div class="container">
+        <ul class="nav-links">
+         <li><a href="#Revolução das cores>Revolução das cores</a></li>
+        </ul>
+
         <div id="cart">
           <span id="cart-icon">🛒</span>
           <div id="cart-items">0</div>
@@ -53,7 +61,8 @@
      <strong> <p>Com um portfólio completo de cores e estilos, a NPS dispõe de uma linha voltada para unhas lindas para uso profissional e doméstico. São esmaltes inovadores, desenvolvidos com tecnologia de ponta e que antecipam tendências.</p></strong>
 
       <h2>Esmaltes Risque:</h2>
-   <h3>Revolução das cores</h3>
+      <section id="Revolução das cores">
+    <h3>Revolução das cores</h3>
 
       <div class="produtos-container">
         <div class="produto">
@@ -94,6 +103,7 @@
           <p class="preço-produto">R$ 6,79</p>
         </div>
       </div>
+    </section>
     </div>
   </div>
 <footer>
@@ -114,6 +124,7 @@
     document.getElementById('cart-items').innerText = cartItems;
     alert(`${nome} adicionado ao carrinho! Total: R$ ${cartTotal.toFixed(2)}`);
   }
+  <button> </button>
 </script>
 </body>
 
