@@ -23,7 +23,7 @@
     }
 
     .produto {
-      flex: 1 1 16%; /* Cada produto ocupará 25% da largura da linha */
+      flex: 1 1 16%; /* Cada produto ocupará 16% da largura da linha */
       padding: 10px;
       box-sizing: border-box;
     }
@@ -39,7 +39,10 @@
   <header>
     <nav>
       <div class="container">
-      
+        <div id="cart">
+          <span id="cart-icon">🛒</span>
+          <div id="cart-items">0</div>
+        </div>
       </div>  
     </nav>
   </header>
@@ -50,64 +53,68 @@
      <strong> <p>Com um portfólio completo de cores e estilos, a NPS dispõe de uma linha voltada para unhas lindas para uso profissional e doméstico. São esmaltes inovadores, desenvolvidos com tecnologia de ponta e que antecipam tendências.</p></strong>
 
       <h2>Esmaltes Risque:</h2>
-   <p>Revolução das cores</p>
+   <h3>Revolução das cores</h3>
 
       <div class="produtos-container">
-        <div class="verde">
-          <li>Esmalte verde</li>
-          <img id="verde" src="esmalteverdementa.png" height="100px" width="200"> 
+        <div class="produto">
+          <li>Menta liza</li>
+          <img src="esmalteverdementa.png" height="100px" width="200"> 
+          <p class="preço-produto">R$ 6,79</p>
+        </div>
+        <p><button class="carrinho" onclick="adicionarItem('Esmalte verde', 6.79)" >Adicionar ao carrinho</button></p>
+        
+        <div class="produto">
+          <li>Preguiça de padrão</li>
+          <img src="esmaltelaranja.png" height="100px" width="200">
+          <p class="preço-produto">R$ 6,79</p>
+          <p><button class="carrinho" onclick="adicionarItem('Esmalte laranja', 6.79)" >Adicionar ao carrinho</button></p>
+        </div>
+
+        <div class="produto">
+          <li>De pacifico só o oceano</li>
+          <img src="esmalteazul.png" height="100px" width="200">
           <p class="preço-produto">R$ 6,79</p>
         </div>
 
         <div class="produto">
-          <li>Esmalte laranja</li>
-          <img id="laranja" src="esmaltelaranja.png" height="50px" width="99">
-           
-
-          <p class="preço-produto">R$ 6,79</p>
-          
-        </div>
-
-        <div class="produto">
-          <li>Esmalte azul</li>
-          <img id="azul" src="esmalteazul.png" height="100px" width="166">
+          <li>Rosa para todes</li>
+          <img src="esmalteroxabordo.png" height="100px" width="200">
           <p class="preço-produto">R$ 6,79</p>
         </div>
 
         <div class="produto">
-          <li>Esmalte roxo</li>
-          <img id="roxo" src="esmalteroxabordo.png" height="50px" width="83">
+          <li>Se joga no bege</li>
+          <img src="nudenobege.png" height="100px" width="200">
           <p class="preço-produto">R$ 6,79</p>
         </div>
 
-        <div class="nudenobege">
-          <li>Esmalte nude</li>
-          <img id="nudenobege" src="nudenobege.png" height="50px" width="83">
-          <p class="preço-produto">R$ 6,79</p>
-        </div>
-
-        <div class="esmalteroxoj">
-          <li>Esmalte roxoo</li>
-          <img id="esmalteroxoj" src="esmalteroxoj.png" height="50px" width="83">
+        <div class="produto">
+          <li>Cancela julgamentos</li>
+          <img src="esmalteroxoj.png" height="100px" width="200">
           <p class="preço-produto">R$ 6,79</p>
         </div>
       </div>
     </div>
   </div>
-</body>
-
-</html>
-                       
-
-
-
-
-
-
-
-
-
-
 <footer>
    <p class="copyright">&copy; Copyright NPS - 2024</p>
 </footer>
+</body>
+
+</html>
+
+
+<script>
+  let cartItems = 0;
+  let cartTotal = 0;
+
+  function adicionarItem(nome, preco) {
+    cartItems++;
+    cartTotal += preco;
+    document.getElementById('cart-items').innerText = cartItems;
+    alert(`${nome} adicionado ao carrinho! Total: R$ ${cartTotal.toFixed(2)}`);
+  }
+</script>
+</body>
+
+</html>
